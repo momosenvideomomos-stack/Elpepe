@@ -1,0 +1,540 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_4_2"
+	group: "4CB417075AAAC1D9"
+	icon: "ad_astra:moon_globe"
+	id: "08582D7917F9624B"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7AA8ACA3CBCBB091"]
+			description: [
+				"Congratulations, you have landed on the Moon."
+				""
+				"This is a hostile environment that is known to spawn dangerous mobs at night, so be sure to stay safe and make sure to collect desh, as it will be an important resource to progress throughout the next chapters."
+			]
+			hide: true
+			icon: "ad_astra:moon_sand"
+			id: "786C782EEACAAE24"
+			rewards: [{
+				count: 5
+				id: "3F1D73C54CAE8DD1"
+				item: "ad_astra:raw_desh"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Land on the Moon!"
+			tasks: [{
+				id: "591520A86D878FC1"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ad_astra:moon_sand"
+				type: "observation"
+			}]
+			title: "Moon Landing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"04AC1E5205116FBA"
+				"350F5F52F4125297"
+				"04AD2942BC63E063"
+				"2D8B3B38DF065C6E"
+				"6B21439BD52DD2A4"
+				"732B26619D191D91"
+				"667A7197B7A9538F"
+				"02E6448DA57A1FCE"
+				"2A73AACB5AD5C8EF"
+				"7F450AA9B030AE63"
+				"7A339F692EF2AA98"
+			]
+			description: [
+				"The tier 1 rocket is the vehicle that'll get you to space! It is able to fly you to Earth orbit all the way to the Moon!"
+				""
+				"Before you launch you should:"
+				"- Place the rocket on a launch pad (&opack an extra launch pad so you can return to Earth again&r)"
+				"- Fill up your space suit with oxygen and equip it"
+				"- Fuel the rocket (you need 6 buckets of fuel for a round trip)"
+				"- OPTIONAL: Bring a few extra filled oxygen tanks"
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "7AA8ACA3CBCBB091"
+			rewards: [{
+				id: "30CCE8F35F3493BD"
+				item: "ad_astra:earth_globe"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Make a tier 1 rocket!"
+			tasks: [
+				{
+					id: "60007266C58E00F3"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_1_rocket"
+						tag: {
+							BotariumData: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BB8422D1D4F19A1"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+			]
+			title: "Preparing for Liftoff"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0201082157ED73B4"
+				"2A1758B9134DA7A0"
+			]
+			description: ["The guidance mechanism is filled with necessary instruments to guide your rocket to its destination. Those factors make it difficult to craft, so be sure to have a lot of resources ready."]
+			id: "04AC1E5205116FBA"
+			shape: "square"
+			subtitle: "Make a guidance mechanism!"
+			tasks: [{
+				id: "68E0CDA783FF7C1D"
+				item: "kubejs:guidance_mechanism"
+				type: "item"
+			}]
+			title: "Assemble: Guidance Mechanism"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "350F5F52F4125297"
+			subtitle: "Make a rocket nose cone!"
+			tasks: [{
+				id: "1C7598CC1D4CF967"
+				item: "ad_astra:rocket_nose_cone"
+				type: "item"
+			}]
+			title: "Assemble: Rocket Nose Cone"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "04AD2942BC63E063"
+			subtitle: "Make some rocket fins!"
+			tasks: [{
+				count: 4L
+				id: "716C7D41C6B96364"
+				item: "ad_astra:rocket_fin"
+				type: "item"
+			}]
+			title: "Obtaining Rocket Fins"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "732B26619D191D91"
+			subtitle: "Make some steel tanks!"
+			tasks: [{
+				count: 2L
+				id: "6DC6CED1EF27DDC4"
+				item: "ad_astra:steel_tank"
+				type: "item"
+			}]
+			title: "Obtaining Steel Tanks"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "6B21439BD52DD2A4"
+			subtitle: "Make a piece of glass!"
+			tasks: [{
+				id: "3C5E3D05C001EA7C"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "Smelt: Glass"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "2D8B3B38DF065C6E"
+			subtitle: "Craft a seat!"
+			tasks: [{
+				id: "7293ED509D2D93FA"
+				item: "create:white_seat"
+				type: "item"
+			}]
+			title: "Craft: Seat"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0201082157ED73B4"
+				"2A1758B9134DA7A0"
+			]
+			description: [
+				"Rocket plating is used for the actual structure of your vehicle. It is durable and sealed, allowing the passenger to stay safe inside."
+				""
+				"This can be made by compacting a block of steel, a block of bronze, and a piece of shadow steel over a superheated blaze burner."
+			]
+			id: "02E6448DA57A1FCE"
+			subtitle: "Make some tier 1 rocket plating!"
+			tasks: [{
+				count: 13L
+				id: "345AC966665B914A"
+				item: "kubejs:tier_1_plating"
+				type: "item"
+			}]
+			title: "Obtain: Tier 1 Rocket Plating"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["443B6792AF71DC53"]
+			id: "667A7197B7A9538F"
+			subtitle: "Make a steel engine!"
+			tasks: [{
+				id: "1CF704C1976A739E"
+				item: "ad_astra:steel_engine"
+				type: "item"
+			}]
+			title: "Assemble: Steel Engine"
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["After making everything essential to space survival, you can now shift your focus to making your vehicle."]
+			hide: true
+			icon: "ad_astra:moon_globe"
+			id: "0201082157ED73B4"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "How to assemble a rocket"
+			tasks: [{
+				id: "5F8A56B02DD372E7"
+				title: "Preparing For Space Travel"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "443B6792AF71DC53"
+			subtitle: "Make a heat engine!"
+			tasks: [{
+				id: "2A12C6882558891A"
+				item: "create_sa:heat_engine"
+				type: "item"
+			}]
+			title: "Assemble: Heat Engine"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1D4F961E93BA038D"]
+			description: ["Shadow steel is key to getting to space. Thanks to its special properties, it is a great material for rocket plating, space suits, and other space-related things. It can be made by dropping chromatic compound into the void or by mixing it with artificial void."]
+			id: "2A1758B9134DA7A0"
+			subtitle: "Make some shadow steel!"
+			tasks: [{
+				count: 30L
+				id: "4DB774729D634232"
+				item: "create:shadow_steel"
+				type: "item"
+			}]
+			title: "Obtaining Shadow Steel"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"212ECF25064E2D36"
+				"334B2FC8ACB19F3E"
+			]
+			description: [
+				"The space suit will keep you safe while you are in space outside of the safety of Earth's atmosphere."
+				""
+				"Just make sure to fill it with oxygen!"
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "74A74CC77D2D9121"
+			shape: "square"
+			subtitle: "Make a space suit!"
+			tasks: [
+				{
+					id: "072C611CEFD52BB6"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26F0592AD7B4E377"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_suit"
+						tag: {
+							BotariumData: { }
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "357290AF1C93D0E8"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "741043FC695B240B"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Obtaining a Space Suit"
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["Oxygen gear is key to making your space suit. It can be made by upgrading a copper backtank along with shadow steel in a smithing table."]
+			id: "212ECF25064E2D36"
+			subtitle: "Make some oxygen gear!"
+			tasks: [{
+				id: "2878FB93E212CECA"
+				item: "ad_astra:oxygen_gear"
+				type: "item"
+			}]
+			title: "Making Oxygen Gear"
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["The oxygen loader takes water as an input and converts it into oxygen as long as it has power. You can fill up a space suit or an oxygen tank by placing them into the input slot."]
+			id: "334B2FC8ACB19F3E"
+			subtitle: "Craft the oxygen loader!"
+			tasks: [{
+				id: "1904DBBAAAE56506"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			title: "Craft: Oxygen Loader"
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["74A74CC77D2D9121"]
+			description: ["Optionally, you can make oxygen tanks which can store an extra oxygen supply. If you interact with an oxygen tank while wearing a space suit, you will refill the space suit at the expense of the oxygen tank's supply."]
+			id: "0AFA56CEE4A77990"
+			optional: true
+			size: 0.75d
+			subtitle: "Craft an oxygen tank!"
+			tasks: [{
+				count: 2L
+				id: "3AD7CBB7CF16D403"
+				item: {
+					Count: 1b
+					id: "ad_astra:oxygen_tank"
+					tag: {
+						BotariumData: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "Craft: Oxygen Tank"
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["310D3B0F28810506"]
+			description: ["The chromatic compound is needed in order to make shadow steel. It can be made by smelting down powdered obsidian, 4 glowstone dust, and an enderium ingot in an induction smelter."]
+			id: "1D4F961E93BA038D"
+			subtitle: "Make some chromatic compound!"
+			tasks: [{
+				count: 30L
+				id: "38E04C3B1CC33711"
+				item: {
+					Count: 1b
+					id: "create:chromatic_compound"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Smelt: Chromatic Compound"
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			description: ["A rocket must be placed onto a launchpad in order to fly. Launch pads are &onot&r picked up when a rocket flies, so be sure to craft an extra one so you can lift off from your destination."]
+			id: "2A73AACB5AD5C8EF"
+			subtitle: "Make a launch pad!"
+			tasks: [{
+				count: 2L
+				id: "5B3F00847E31D923"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			title: "Assemble: Launch Pad"
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["79AFD73AF5C6F5F5"]
+			description: ["In chapter 4, you will use all of your industrial might from the past 3 chapters to construct a rocket to fly to the Moon."]
+			hide: true
+			id: "310D3B0F28810506"
+			rewards: [{
+				count: 3
+				id: "00C0ADB1A430C955"
+				item: "mekanism:basic_control_circuit"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5AA213B782B6A48B"
+				item: "kubejs:processor"
+				type: "item"
+			}]
+			title: "Chapter 4"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "7F450AA9B030AE63"
+			subtitle: "Make a vent!"
+			tasks: [{
+				id: "74B4EC9DFBF0DD77"
+				item: "ad_astra:vent"
+				type: "item"
+			}]
+			title: "Craft: Vent"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["Flux networks are a way to wirelessly transport power. They work by making networks, and if a flux point and flux plug's network's match, they will transfer power between each other."]
+			icon: "fluxnetworks:flux_core"
+			id: "580696A36F604502"
+			optional: true
+			subtitle: "Bluetooth."
+			tasks: [
+				{
+					id: "22DB9277EDB16203"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					id: "531A91EF1B6F8E49"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+			]
+			title: "Wireless Power Transportation"
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			description: ["There are several types of rocket fuels that you can use. Choose the one you prefer more."]
+			id: "7A339F692EF2AA98"
+			subtitle: "Choose your rocket fuel!"
+			tasks: [{
+				id: "7F26215DCA8738B0"
+				title: "Rocket Fuel"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7A339F692EF2AA98"]
+			description: ["Refined fuel can be made using fractionating stills and oil (Thermal and Ad Astra oil both work)."]
+			id: "1173FEFBB7C50150"
+			optional: true
+			tasks: [{
+				id: "47CCC73F114F95F4"
+				item: "thermal:refined_fuel_bucket"
+				type: "item"
+			}]
+			title: "Thermal's Refined Fuel"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A339F692EF2AA98"]
+			description: ["With biomass, cinder flour, and sugar, you can make bioethanol, which can serve as a rocket fuel but can also superheat a blaze burner for a long time."]
+			id: "68D181F250E8C5F9"
+			optional: true
+			tasks: [{
+				id: "12A9D845D320262F"
+				item: "createaddition:bioethanol_bucket"
+				type: "item"
+			}]
+			title: "Create's Bioethanol"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A339F692EF2AA98"]
+			description: ["When turned into liquid, ethylene can be used as a rocket fuel."]
+			id: "295C9AB620CF6B45"
+			optional: true
+			tasks: [{
+				id: "524BC1D6743176B8"
+				item: "mekanism:ethene_bucket"
+				type: "item"
+			}]
+			title: "Mekanism's Liquid Ethylene"
+			x: -6.0d
+			y: 3.0d
+		}
+	]
+	title: "Chapter 4"
+}

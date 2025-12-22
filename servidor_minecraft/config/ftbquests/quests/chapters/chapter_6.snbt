@@ -1,0 +1,290 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_6"
+	group: "4CB417075AAAC1D9"
+	icon: "ad_astra:mars_globe"
+	id: "7FB20F688F99ED24"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0F64258E3491AF41"]
+			description: ["Congratulations on landing on Mars! Similarly to the Moon, this planet contains a new ore, named ostrum, that will be required to continue progressing."]
+			icon: "ad_astra:mars_stone"
+			id: "3B9C3A08F871E9A0"
+			rewards: [{
+				count: 10
+				id: "65064AE9107B13DC"
+				item: "ad_astra:raw_ostrum"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Land on Mars!"
+			tasks: [{
+				id: "426C75D63591894A"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ad_astra:mars_stone"
+				type: "observation"
+			}]
+			title: "Mars Landing"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"283D991BB514ABDE"
+				"5A74BCC0F6A19441"
+			]
+			description: [
+				"Tier 2 rockets have the same capability as tier 1 with the added bonus of being able to visit Mars."
+				""
+				"&lFriendly reminder to have another launchpad on you so you can actually come back."
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_2_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "0F64258E3491AF41"
+			shape: "square"
+			subtitle: "Make a tier 2 rocket!"
+			tasks: [
+				{
+					id: "47D65FF52A047092"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_2_rocket"
+						tag: {
+							BotariumData: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13328E7873B0F47D"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+				{
+					id: "00EA3F75712D159C"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FFF115B5477EB2A"]
+			id: "283D991BB514ABDE"
+			subtitle: "Make a desh engine!"
+			tasks: [{
+				id: "4FC212229A21C325"
+				item: "ad_astra:desh_engine"
+				type: "item"
+			}]
+			title: "Assemble: Desh Engine"
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1082F3949A0A92B9"]
+			description: ["Similarly to the tier 1 rocket plating, you need to compact different materials in order to obtain the tier 2 rocket plating. In this case, you'll be directly building off of the tier 1 rocket plating, by also compacting a desh block and a thermal tile to make the tier 2 rocket plating piece."]
+			id: "5A74BCC0F6A19441"
+			subtitle: "Make some tier 2 rocket plating!"
+			tasks: [{
+				count: 13L
+				id: "696A9272978D06C2"
+				item: "kubejs:tier_2_plating"
+				type: "item"
+			}]
+			title: "Obtain: Tier 2 Rocket Plating"
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1ABFE30A949D4514"]
+			description: [
+				"After obtaining silica clusters, you can then compact 6 of them, plus a piece of enriched carbon in order to obtain a thermal tile!"
+				""
+				"A thermal tile is used as heat shielding for your Mars rocket to be a good form of defense against the heat that your lander must endure when entering the atmosphere of Mars."
+			]
+			id: "1082F3949A0A92B9"
+			subtitle: "How to make thermal tiles!"
+			tasks: [{
+				id: "4DD75A70FD5E3B04"
+				item: "kubejs:thermal_tile"
+				type: "item"
+			}]
+			title: "Heat Shielding"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B7B9DC195848E00"]
+			description: [
+				"In this chapter, you'll be the first human ever to land on Mars!"
+				""
+				"At the same time, there's a chance humans have already landed on Mars. I wouldn't really know, I don't have Internet access. All I have is this game instance, the files... and you, the player... haha..."
+				""
+				"&oPlease don't leave.&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "1FFF115B5477EB2A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0F00E7A1C1C53335"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "Back Into Space"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0E5B6284584FD9A8"]
+			description: [
+				"Space stations can be assembled with &l32 desh ingots, 32 steel ingots, 64 iron sheets, and 32 desh plates.&r Feel free to decorate it as you wish!"
+				""
+				"You'll be needing space stations in order to make silica, which will be used with carbon to make thermal tiles to act as a heat shield for entering the atmosphere of Mars."
+				""
+				"&oCheck the processing line required for thermal tiles using JEI so you are prepared.&r"
+			]
+			id: "0578D274314DCDB9"
+			subtitle: "Make a space station"
+			tasks: [{
+				dimension: "ad_astra:earth_orbit"
+				id: "2C85743FDF0A5729"
+				type: "dimension"
+			}]
+			title: "Space Stations!"
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1FFF115B5477EB2A"]
+			description: ["The microgravity centrifuge has a complicated recipe, but is necessary to get to Mars."]
+			id: "0E5B6284584FD9A8"
+			tasks: [{
+				id: "3C1BD4C23EA92812"
+				item: {
+					Count: 1b
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "custom_machines:microgravity_centrifuge"
+					}
+				}
+				type: "item"
+			}]
+			title: "Craft: Microgravity Centrifuge"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0578D274314DCDB9"]
+			description: ["High-grade sand is sand that has a significantly higher concentration of silica in it. It can be made by placing sand into a microgravity centrifuge."]
+			id: "5D9FB1FC5FAAAE31"
+			tasks: [{
+				id: "455B697D1B9CFA55"
+				item: "kubejs:high_grade_sand"
+				type: "item"
+			}]
+			title: "Obtaining High-Grade Sand"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5D9FB1FC5FAAAE31"]
+			description: ["Silica clusters can be obtained by crystallizing clean silica slurry."]
+			id: "1ABFE30A949D4514"
+			tasks: [{
+				id: "5056AEB55B614377"
+				item: "kubejs:silica_cluster"
+				type: "item"
+			}]
+			title: "Obtaining Silica Clusters"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3B9C3A08F871E9A0"]
+			description: ["Tesseracts are improved versions of flux networks. They have the added ability of being able to transport fluids and items through networks, not just energy!"]
+			id: "546C5E57FE559538"
+			optional: true
+			size: 0.75d
+			subtitle: "Flux+"
+			tasks: [{
+				id: "6B834C323179D91F"
+				item: "tesseract:tesseract"
+				type: "item"
+			}]
+			title: "Tesseracts"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B9C3A08F871E9A0"]
+			description: ["The cryo freezer can take various types of ice and turn them into cryo fuel, a more efficient fuel that can lower your traveling costs from 3 buckets per flight to just 1!"]
+			id: "0F78AB37FD37271E"
+			optional: true
+			size: 0.75d
+			tasks: [{
+				id: "3F309E4642CEF7FA"
+				item: "ad_astra:cryo_freezer"
+				type: "item"
+			}]
+			title: "Better Fuel"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B9C3A08F871E9A0"]
+			description: ["Using the ground sifter, you are able to produce iron from the surface of Mars."]
+			icon: {
+				Count: 1b
+				id: "custommachinery:custom_machine_item"
+				tag: {
+					machine: "custom_machines:ground_sifter"
+				}
+			}
+			id: "0202BD4170304A6A"
+			optional: true
+			size: 0.75d
+			tasks: [
+				{
+					id: "18880C91D095D7FB"
+					item: {
+						Count: 1b
+						id: "custommachinery:custom_machine_item"
+						tag: {
+							machine: "custom_machines:ground_sifter"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0755B93FD786CB47"
+					item: "kubejs:rusted_iron"
+					type: "item"
+				}
+			]
+			title: "Improved Iron Automation"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "Chapter 6"
+}

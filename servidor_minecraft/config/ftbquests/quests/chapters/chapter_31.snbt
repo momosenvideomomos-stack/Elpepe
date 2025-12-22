@@ -1,0 +1,118 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_31"
+	group: "4CB417075AAAC1D9"
+	icon: "kubejs:processor"
+	id: "3E0D4DC4F7AEA7AB"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0BCBF6622303FB66"]
+			description: ["This subchapter will focus on making processors, upgrading your control circuits to higher tiers, and making upgrades to existing Mekanism machinery."]
+			id: "4BEDFE6B207719A1"
+			rewards: [
+				{
+					count: 4
+					id: "73537D79DC08DFF7"
+					item: "mekanism:hdpe_pellet"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 3
+					id: "37CBE76E4CA2DFB6"
+					item: "minecraft:gold_ingot"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "More advanced circuits, processors, and upgrading Mekanism machinery"
+			tasks: [{
+				id: "1FB5EF737C2CEF2C"
+				item: "kubejs:logic_mechanism"
+				type: "item"
+			}]
+			title: "Chapter 3.1"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BEDFE6B207719A1"]
+			description: ["Advanced control circuits are control circuits... except more advanced."]
+			id: "42786D75DB2811C6"
+			subtitle: "Make advanced control circuits!"
+			tasks: [{
+				id: "2B503F62EFB42426"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			title: "Advanced Circuitry"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42786D75DB2811C6"]
+			description: ["Advanced factories provide more input and output slots than basic factories."]
+			id: "6D34A2A27B68D792"
+			optional: true
+			subtitle: "Even better factories!"
+			tasks: [{
+				id: "69390B3306DC969A"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			title: "Upgrading Mekanism Machines 2"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42786D75DB2811C6"]
+			description: ["These circuits are just more cool and awesome compared to the advacned and basic ones."]
+			id: "3001241575331A22"
+			subtitle: "Make elite control circuits!"
+			tasks: [{
+				id: "6B146D13CCC206CD"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			title: "Elite Circuitry"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3001241575331A22"]
+			description: ["Elite factories provide another boost to the input and output slots, making them better than the advanced and basic ones."]
+			id: "49C6B0E6BD12F84C"
+			subtitle: "Even betterer factories!"
+			tasks: [{
+				id: "04726FCB63BBA98F"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			title: "Upgrading Mekanism Machines 3"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3001241575331A22"]
+			description: ["A processor can be made with an iron sheet, copper wire, elite control circuit, and a logic mechanism."]
+			id: "79AFD73AF5C6F5F5"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Assemble a processor"
+			tasks: [{
+				id: "58B2C24E4C3BB800"
+				item: "kubejs:processor"
+				type: "item"
+			}]
+			title: "Assemble: Processor"
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+	title: "Chapter 3.1"
+}

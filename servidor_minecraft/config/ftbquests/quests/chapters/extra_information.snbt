@@ -1,0 +1,160 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extra_information"
+	group: ""
+	icon: "create:large_cogwheel"
+	id: "2B5ACEB51268B4C0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"When it comes to transporting fluids or items from one point to another, you should probably use pipes for fluids and logistical transporters for items."
+				""
+				"In order for these modes of transportation to properly work, something you should make sure to do is to use the configurator and set the output for the pipe and if you want, the input as well. You can change the input/output slots by shift right clicking the part of the pipe/transporter that is attached to the thing that you are pumping things out of."
+				""
+				"When it comes to using Ad Astra pipes, you should use the wrench from Ad Astra to set the output, but rather than shift right clicking, you simply right click the part of the pipe you are pumping things out of until it is set to output."
+			]
+			icon: "ad_astra:desh_fluid_pipe"
+			id: "07956FDFA9FA34F6"
+			subtitle: "Extra information on using pipes, logistical transporters, and more!"
+			tasks: [{
+				id: "1087AF2CC9B8B15C"
+				title: "Using Pipes"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"In Mekanism machines, there is a button that is on the right of the GUI of the machine you are using that will let you change input slots and output slots. Make sure you are on the correct type. What is meant by that is that some Mekanism machines have different types of input/output. An example is that one machine could have item input/outputs, fluid input/outputs, and gas input/outputs."
+				""
+				"Regarding Thermal machines, there is a button on the GUI of the machine that lets you set inputs and outputs and which side they are on, much like Mekanism. Unlike the Thermal machine input slots and output slots, it does not provide a specific configuration for items, fluids, and gasses, but it still highlights slots for items and fluids and what the input and output is."
+			]
+			icon: "thermal:machine_smelter"
+			id: "72696C9D46468726"
+			subtitle: "Information on inputs/outputs on machines"
+			tasks: [{
+				id: "2507D05FFBBDBB79"
+				title: "Setting Inputs/Outputs For Machines"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"There are many different things that you can use in Mekanism to transport things such as liquids and items, but how should one know which ones to use?"
+				""
+				"Pipes: Liquids (like water and brine)"
+				""
+				"Pressurized Tubes: Gasses (fissile fuel, nuclear waste, steam)"
+				""
+				"Logistical Transporters: Items"
+				""
+				"Thermodynamic Conductors: Heat (loses efficiency the longer this \"cable\" is)"
+			]
+			icon: "mekanism:basic_mechanical_pipe"
+			id: "7A42E2EDFD28488F"
+			subtitle: "Explanations on different transporters and what they're used for"
+			tasks: [{
+				id: "6C01E8C90FD853FE"
+				title: "What Should I Use?"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			description: ["In the next few quests following this one, you'll learn about the tools in this modpack that should hopefully make building an easier task for you."]
+			icon: "minecraft:bricks"
+			id: "4B4D6BA7075C8AB9"
+			subtitle: "A small guide to easier building"
+			tasks: [{
+				id: "674F00F5D72EE23F"
+				title: "Quark's Building Tools"
+				type: "checkmark"
+			}]
+			title: "Create: Mekanized's Building Tools"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: [
+				"Trowels are great for when it comes to making randomized block palletes."
+				""
+				"When holding one and trying to place a block with it, it will randomly select blocks that it can place that are currently in your hotbar and places them."
+			]
+			id: "67ADF9035181F6BF"
+			subtitle: "Random blocks!"
+			tasks: [{
+				id: "4FA7EB628D2DAF28"
+				item: "quark:trowel"
+				type: "item"
+			}]
+			title: "The Trowel"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: [
+				"The Abacus can be used to count the distance between two blocks in a much faster and efficient way. By simply right clicking on one block and then hovering over the other block, it will give you the distance between those two."
+				""
+				"This tool has a range of 48 blocks."
+			]
+			id: "130A5EA2465DC83C"
+			subtitle: "Counting."
+			tasks: [{
+				id: "19505E7B6DF2DD43"
+				item: "quark:abacus"
+				type: "item"
+			}]
+			title: "The Abacus"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: ["By right clicking on the ground, you can summon in a \"mirror\" that will, well, mirror the blocks you place down."]
+			id: "440E937D5705129A"
+			subtitle: "Mirror blocks."
+			tasks: [{
+				id: "4ACD3F8D964FD7EB"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			title: "The Wand of Symmetry"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: [
+				"Here's the thing, as of writing out this quest, I do not know all of the features of the building wands, but I know they can really help out when it comes to placing blocks without having to move too much."
+				""
+				"The iron wand isn't the only tier, you can make diamond and netherite building wands as well!"
+			]
+			id: "1CC3D45477FE8C01"
+			subtitle: "Wands to help you build easier!"
+			tasks: [{
+				id: "07C660DB71EF35C1"
+				item: {
+					Count: 1b
+					id: "wands:iron_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Building Wands"
+			x: 2.5d
+			y: 0.5d
+		}
+	]
+	title: "Extra Information"
+}

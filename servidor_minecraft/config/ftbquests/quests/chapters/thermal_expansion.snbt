@@ -1,0 +1,180 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal_expansion"
+	group: ""
+	icon: "thermal:machine_frame"
+	id: "66C4DE8421F2E018"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The Thermal series of mods can generally be viewed as a quality-of-life mod of technology modpacks. This chapter can be considered as a small guide to explain some things about Thermal and some of its features that you might consider useful to use in your playthrough."]
+			id: "023EF4D724CE5AB6"
+			optional: true
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Your small guide to Thermal Expansion!"
+			tasks: [{
+				id: "533B1D6EBE8F92E6"
+				title: "Thermal Expansion Mini-Guide"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			description: ["The fluxsaw is a tool from the Thermal Series which is essentially an axe that uses up energy instead of durability. It can also be enchanted with things like efficiency, silk touch, etc..."]
+			id: "01E62853E6BD90A4"
+			subtitle: "An energy-powered axe?"
+			tasks: [{
+				id: "2FC3BA241A206865"
+				item: {
+					Count: 1b
+					id: "thermal:flux_saw"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "The Fluxsaw"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			description: ["The fluxbore, much like the fluxsaw is an alternative to an already existent line of tools (pickaxes, in this case) that uses energy rather than durability. It can also be enchanted."]
+			id: "6BCB6BD1C9D4C1FD"
+			subtitle: "An energy-powered pickaxe?"
+			tasks: [{
+				id: "33924ED23DEB5B63"
+				item: {
+					Count: 1b
+					id: "thermal:flux_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "The Fluxbore"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			icon: "thermal:machine_frame"
+			id: "49B56964EFB1B9CA"
+			subtitle: "Thermal's machines to help with automation!"
+			tasks: [{
+				id: "6E0A61F2B38DE1E8"
+				title: "Thermal QOL Machines"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: [
+				"The igneous extruder is a device that can automatically produce things like stone, cobblestone, blackstone, etc..."
+				""
+				"For example if you want to get cobblestone from it, you can dig a 3x1 hole, place the igneous extruder in the middle, and then place a lava source on one side and a water source on the other side and it will begin to produce cobblestone. If you look at its uses, you can see other patterns to make other types of stone."
+				""
+				"If given integral components, it will produce more things at once."
+			]
+			id: "1D6835A5C35F2ABA"
+			subtitle: "Automatic stone production?"
+			tasks: [{
+				id: "56987C5A4FF952BB"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["The aquatic entangler can be placed in large bodies of water to automatically collect fish. You can even speed up the process by adding some aqua-chow as bait."]
+			id: "3F995797681BB64D"
+			subtitle: "Automatic fish catcher"
+			tasks: [{
+				id: "548C467A5E5531E1"
+				item: "thermal:device_fisher"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["The decoctive diffuser allows you to place potions in it and it will start to spread them in an area when you get near them. Perfect for traps!"]
+			id: "5BA4261097CB5E6F"
+			subtitle: "AOE potion attacks"
+			tasks: [{
+				id: "6F0F0F88B8F34566"
+				item: "thermal:device_potion_diffuser"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["The vacuumulator is like a hopper, except it can pick up things in a larger range. This can be used to automatically collect items from things like mob farms."]
+			id: "371FC6CE5DFFE69D"
+			subtitle: "Hopper... but bigger"
+			tasks: [{
+				id: "203C869084A5B7B6"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["The nullifier, through some unknown means is able to quite literally destroy matter. It is like a trash can, but if items are pumped into it automatically, it instantly voids them. So weird, right?"]
+			id: "206AC6A0E24A05CF"
+			subtitle: "Matter CAN be destroyed"
+			tasks: [{
+				id: "5A63AFDD4C5DD5B8"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			description: ["The satchel can be considered your best friend when it comes to storing items. While at first you &omight&r notice that it doesn't have that much storage space, if you use Thermal's Tinkering Table, you can add integral components to the satchel to increase its storage capacity greatly."]
+			id: "4D5A416EA77B6BC4"
+			size: 0.75d
+			subtitle: "Craft a satchel!"
+			tasks: [{
+				id: "474C0BC17E9A66C8"
+				item: "thermal:satchel"
+				type: "item"
+			}]
+			title: "Mini-Backpack"
+			x: 0.0d
+			y: -1.875d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: [
+				"The aqueous accumulator can help collect water which can later be moved into a pipe system from it. In order for it to work, it needs to have at least 2 water source blocks adjacent to it. The more water source blocks adjacent to this block, the faster it works."
+				""
+				"Yes, it is compatible with integral components."
+			]
+			id: "4B5DF0D98308C738"
+			subtitle: "Best water pump award goes to..."
+			tasks: [{
+				id: "11FF96945D5E5095"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+	]
+	title: "Thermal Expansion"
+}

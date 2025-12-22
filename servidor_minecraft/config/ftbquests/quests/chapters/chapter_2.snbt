@@ -1,0 +1,258 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2"
+	group: "4CB417075AAAC1D9"
+	icon: "create:brass_ingot"
+	id: "124BE1C1E2FB558C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["727EDAC31AE73E28"]
+			description: ["Welcome to chapter 2! This is the chapter where Create starts getting significantly more capable thanks to brass."]
+			hide: true
+			icon: "kubejs:golden_hand"
+			id: "6937985DF869023E"
+			rewards: [
+				{
+					count: 5
+					id: "00ED49CCABA018A1"
+					item: "create:zinc_ingot"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 5
+					id: "13848DC786674A9D"
+					item: "minecraft:gold_ingot"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 10
+					id: "68DAC88C7F7F6FC0"
+					item: "minecraft:copper_ingot"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5AA69E9B49133FB8"
+				item: "kubejs:basic_mechanism"
+				type: "item"
+			}]
+			title: "Chapter 2"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6937985DF869023E"]
+			description: ["A blaze burner is basically a blaze that you capture from its home and force to work for you for the rest of its life! Wait... this feels a little wrong... I don't know about this... Just make sure to feed it and entertain it, okay?"]
+			id: "17D9EE1A52F8065E"
+			rewards: [{
+				count: 10
+				id: "5358EAAF86C610E0"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "Obtain a NON-empty blaze burner!"
+			tasks: [{
+				id: "53E20337387E2696"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Collect: Blaze Burner"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["17D9EE1A52F8065E"]
+			description: [
+				"Brass is one of the most important items in Create. It can be made by mixing a zinc ingot and a copper ingot over a heated blaze burner."
+				""
+				"&mOptionally&r, you can automate this by automating the production of zinc and copper before sending it off to be mixed into brass."
+			]
+			id: "33EA447FABC71E08"
+			shape: "square"
+			subtitle: "Make some brass!"
+			tasks: [{
+				count: 32L
+				id: "7625CB5AA49853C4"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "The Brass Age"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6937985DF869023E"]
+			description: ["If these were edible, they'd definitely taste like vanilla."]
+			icon: "minecraft:quartz"
+			id: "55641F2584895E41"
+			subtitle: "Automate nether quartz"
+			tasks: [
+				{
+					id: "2C3D87F40057F757"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "5F3DB7F2B45BE66A"
+					type: "checkmark"
+				}
+			]
+			title: "Automate: Nether Quartz"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["17D9EE1A52F8065E"]
+			description: ["Destabilized redstone is just liquid redstone. It can be made by mixing redstone dust over a heated blaze burner."]
+			icon: "thermal:redstone_bucket"
+			id: "6042A34B54FF0701"
+			subtitle: "Make some destabilized redstone!"
+			tasks: [{
+				id: "02F1B916B6E3BE8C"
+				title: "Liquid Redstone"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"55641F2584895E41"
+				"6042A34B54FF0701"
+			]
+			description: ["Rose quartz would probably taste like strawberry."]
+			id: "13ED268D88B6950D"
+			subtitle: "Make some rose quartz!"
+			tasks: [{
+				id: "696940F27B1C4770"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			title: "Pink Quartz"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13ED268D88B6950D"]
+			description: ["Made with polished rose quartz and an iron nugget, electron tubes are crucial components of many brass machines."]
+			id: "75EC7896A1FBE404"
+			shape: "square"
+			subtitle: "Craft an electron tube!"
+			tasks: [{
+				id: "14810E71801108FF"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "Craft: Electron Tube"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"75EC7896A1FBE404"
+				"33EA447FABC71E08"
+			]
+			description: ["A precision mechanism can be made with a brass sheet, electron tube, a cogwheel, and a part of an assembly kit."]
+			id: "2E3AECA5FE173852"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Make a precision mechanism!"
+			tasks: [{
+				id: "6DCB1ABCCF242753"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Assemble: Precision Mechanism"
+			x: 2.25d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"75EC7896A1FBE404"
+				"2E3AECA5FE173852"
+				"33EA447FABC71E08"
+			]
+			description: ["Optionally, you can take a step back and improve your processing lines from chapter 1 with your new machinery."]
+			icon: "create:smart_chute"
+			id: "514DCF351A8BEFED"
+			optional: true
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "2DF7AC0C5DF7ACD3"
+				title: "Upgrades, people. Upgrades!"
+				type: "checkmark"
+			}]
+			x: 0.65d
+			y: 4.550000000000001d
+		}
+		{
+			dependencies: ["2E3AECA5FE173852"]
+			description: ["Train systems are a very interesting part of Create, but they are not required for this pack."]
+			icon: "create:controls"
+			id: "47208C7C01BD7397"
+			optional: true
+			rewards: [{
+				count: 45
+				id: "6C7B057C5934AA6C"
+				item: "create:track"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Choo choo"
+			tasks: [
+				{
+					id: "5B72F517B9833DA3"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "4E3FB88B18C8706C"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "4EC5F22EAB616880"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "1B559EF56E30F22E"
+					item: "create:track_station"
+					type: "item"
+				}
+			]
+			title: "Trains"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E3AECA5FE173852"]
+			description: ["Jetpacks are an optional, yet fun and quick form of travel. You can fill them with compressed air by placing one down and turning the shaft at the top of the jetpack."]
+			id: "78CB9C72D1718C8F"
+			optional: true
+			tasks: [{
+				id: "0635020E8E78B36B"
+				item: {
+					Count: 1b
+					id: "create_jetpack:jetpack"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+	]
+	title: "Chapter 2"
+}

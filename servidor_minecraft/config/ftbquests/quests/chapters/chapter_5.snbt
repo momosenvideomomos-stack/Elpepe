@@ -1,0 +1,671 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5"
+	group: "4CB417075AAAC1D9"
+	icon: "mekanismgenerators:control_rod_assembly"
+	id: "523AB9DF7E58E0C5"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["786C782EEACAAE24"]
+			description: [
+				"This chapter will carefully guide you through making a nuclear reactor, fissile fuel, and an industrial turbine to help you harness energy from your reactor."
+				""
+				"I hate to be the one to inform you, but nuclear weapons are unfortunately not in this modpack. The developer probably has that saved for something else."
+			]
+			hide: true
+			id: "7C364DE5FB995CA1"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Chapter 5!"
+			tasks: [{
+				id: "5E92D930A3FEC2A2"
+				item: "ad_astra:raw_desh"
+				type: "item"
+			}]
+			title: "Reactors, Turbines, and Chemistry!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C364DE5FB995CA1"]
+			description: [
+				"The industrial turbine can collect steam as an input, which will use that steam to spin and generate lots of energy. It is a multiblock structure, so you'll need to assemble a specific structure in order to get it functioning."
+				""
+				"The following quest will show you all the resources you'll need to build one."
+			]
+			icon: "mekanismgenerators:rotational_complex"
+			id: "771421DF8A50DCFD"
+			subtitle: "Guide to making an industrial turbine!"
+			tasks: [{
+				id: "4F0226E36AF469FE"
+				title: "Industrial Turbine"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C364DE5FB995CA1"]
+			description: [
+				"The fission reactor is what will be using the fissile fuel you (hopefully) made along with water as an input and will output steam for the industrial turbine to use and nuclear waste, which can be reprocessed."
+				""
+				"The following quest will explain how to make a nuclear reactor and how to operate one safely."
+			]
+			icon: "mekanismgenerators:control_rod_assembly"
+			id: "25263FF4F7B0B39E"
+			subtitle: "Guide to making a nuclear reactor!"
+			tasks: [{
+				id: "3A0A57AAD5CA412D"
+				title: "Fission Reactor"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C364DE5FB995CA1"]
+			description: ["Fissile fuel is consumed in a nuclear reactor. It has a long processing line, but the next few quests will demonstrate how to produce this fuel."]
+			icon: "create:crushed_raw_uranium"
+			id: "749AC666377ABA7A"
+			subtitle: "Guide to making fissile fuel!"
+			tasks: [{
+				id: "27E310A22ECB8F24"
+				title: "Fissile Fuel Production"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: [
+				"Water is key to producing fissile fuel, so make sure you have a good supply of it."
+				""
+				"A recommendation is that you utilize the aqueous accumulator and place 4 water source blocks adjacent to it so it is at max efficiency and run it into the machines that need it."
+			]
+			icon: "minecraft:water_bucket"
+			id: "3DF1B532D0736D89"
+			subtitle: "Find a way to obtain lots of water"
+			tasks: [{
+				id: "63B58BC4AB914BD4"
+				title: "Having Water"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3DF1B532D0736D89"]
+			icon: "mekanism:electrolytic_separator"
+			id: "0710AB33CC542EF3"
+			subtitle: "Make oxygen from an electrolytic separator!"
+			tasks: [{
+				id: "42D3FDE3EAF26949"
+				title: "Obtaining Oxygen"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3DF1B532D0736D89"]
+			icon: "mekanism:rotary_condensentrator"
+			id: "7EC74A19D82937A1"
+			subtitle: "Turn some water into water vapor using the rotary condensentrator!"
+			tasks: [{
+				id: "52776B56A85ADE88"
+				title: "Obtaining Water Vapor"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["504EB5CA60295067"]
+			icon: "mekanism:chemical_oxidizer"
+			id: "1019EB728C098EA0"
+			subtitle: "Turn your sulfur into sulfur dioxide with the chemical oxidizer!"
+			tasks: [{
+				id: "6E3C4F7B5829F03C"
+				title: "Obtaining Sulfur Dioxide"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1019EB728C098EA0"
+				"0710AB33CC542EF3"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "13E2A4F61CEEDC21"
+			subtitle: "Use the chemical infuser to combine oxygen and sulfur dioxide into sulfur trioxide!"
+			tasks: [{
+				id: "4CF15CCBD8694CAF"
+				title: "Obtaining Sulfur Trioxide"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"13E2A4F61CEEDC21"
+				"7EC74A19D82937A1"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "307288C1FDC28237"
+			subtitle: "Make sulfuric acid with water vapor and sulfur trioxide in a chemical infuser!"
+			tasks: [{
+				id: "6F8AC1E8BF59AFCB"
+				title: "Obtaining Sulfuric Acid"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: [""]
+			id: "7344CA0F2FC6C79B"
+			subtitle: "Mine out some fluorite!"
+			tasks: [{
+				count: 15L
+				id: "3F318265481D1BB4"
+				item: "mekanism:fluorite_gem"
+				type: "item"
+			}]
+			title: "Obtain: Fluorite"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"307288C1FDC28237"
+				"7344CA0F2FC6C79B"
+			]
+			icon: "mekanism:chemical_dissolution_chamber"
+			id: "737BA91FC70410C3"
+			subtitle: "Make hydrofluoric acid by placing sulfuric acid and fluorite into a chemical dissolution chamber!"
+			tasks: [{
+				id: "336F459FDEDE9754"
+				title: "Obtaining Hydrofluoric Acid"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: ["Uranium can be found underground and is used to make fissile fuel."]
+			id: "1FB44B47C2D4DC64"
+			subtitle: "Get some uranium ingots!"
+			tasks: [{
+				count: 20L
+				id: "40A4BA29C215B62C"
+				item: "mekanism:ingot_uranium"
+				type: "item"
+			}]
+			title: "Obtain: Uranium Ingot"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1FB44B47C2D4DC64"]
+			icon: "mekanism:enrichment_chamber"
+			id: "469B609F3FD1417D"
+			subtitle: "Enrich uranium ingots into yellow cake uranium!"
+			tasks: [{
+				count: 40L
+				id: "3358BE23724A935D"
+				item: "mekanism:yellow_cake_uranium"
+				type: "item"
+			}]
+			title: "Obtaining Yellow Cake Uranium"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["469B609F3FD1417D"]
+			icon: "mekanism:chemical_oxidizer"
+			id: "363281C2A9C8BA90"
+			subtitle: "Make uranium oxide by placing yellow cake uranium into a chemical oxidizer!"
+			tasks: [{
+				id: "772AD1A2FD3B433D"
+				title: "Obtaining Uranium Oxide"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"737BA91FC70410C3"
+				"363281C2A9C8BA90"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "3C29FC2B2B5D83DD"
+			shape: "square"
+			subtitle: "Make uranium hexafluoride by placing uranium oxide and hydrofluoric acid in a chemical infuser!"
+			tasks: [{
+				id: "1C1CA0863A9D6C54"
+				title: "Obtaining Uranium Hexafluoride"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3C29FC2B2B5D83DD"]
+			description: ["You've finally done it. You have automated everything you possibly could've in order to make fissile fuel, nice job. You've done the hard part, now (if you haven't already) you can start working on your nuclear reactor and industrial turbine."]
+			icon: "mekanism:isotopic_centrifuge"
+			id: "1A27B5AF97693B83"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Make some fissile fuel!"
+			tasks: [{
+				id: "38454656D7AB26E7"
+				title: "Obtaining Fissile Fuel"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: [
+				"The thermal evaporation plant is a pretty easy thing to make. It is a multi-block structure that will evaporate different fluids and leave behind anything they might contain. In order to have a good fissile fuel factory, the thermal evaporation plant is crucial to making what is known as brine (which will be used for making sulfur for fissile fuel)"
+				""
+				"&lA schematic file is included to make a basic thermal evaporation plant. Feel free to make it taller (maximum of 18 blocks in height) because the taller the plant, the more efficient it is.&r"
+				""
+				"In the corners, you can place advanced solar generators to easily turn solar energy into heat to heat up the plant. If you don't want to use that, you can instead get any generator of choice, have it power a resistive heater, and then use thermodynamic conductors to go into one of the valves of your thermal evaporation plant. Note that thermodynamic conductors lose efficiency the longer they are, so place your heater close by."
+			]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "4215149FE78B14EA"
+			subtitle: "Make a thermal evaporation plant!"
+			tasks: [
+				{
+					count: 32L
+					id: "30FCE3C19E3BA188"
+					item: "mekanism:thermal_evaporation_block"
+					type: "item"
+				}
+				{
+					id: "38BF1B53424A7755"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6A70D5C3859FA7F4"
+					item: "mekanism:thermal_evaporation_valve"
+					type: "item"
+				}
+			]
+			title: "Construct: Thermal Evaporation Plant"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4215149FE78B14EA"]
+			icon: "mekanism:brine_bucket"
+			id: "390E4FF07FDA076D"
+			subtitle: "Get some brine from the thermal evaporation plant!"
+			tasks: [{
+				id: "35597B13AA33AE50"
+				title: "Obtaining Brine"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DF1B532D0736D89"]
+			icon: "mekanism:electrolytic_separator"
+			id: "68635A71186E4FF5"
+			subtitle: "Electrolyze water into hydrogen!"
+			tasks: [{
+				id: "4ACD20AA81E58F9E"
+				title: "Obtaining Hydrogen"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["390E4FF07FDA076D"]
+			icon: "mekanism:electrolytic_separator"
+			id: "34F16EA2D0A2921A"
+			tasks: [{
+				id: "21D3C0E41F84B7AC"
+				title: "Obtaining Chlorine"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"68635A71186E4FF5"
+				"34F16EA2D0A2921A"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "08E53ACDDD454615"
+			subtitle: "Get hydrogen chloride from combining hydrogen and chlorine!"
+			tasks: [{
+				id: "2D0E62EF316BE79E"
+				title: "Obtaining Hydrogen Chloride"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: ["You have automated flint all the way back in chapter 1, so why not use that flint for something new? By placing flint into a Mekanism crusher (and giving it power), you can turn it into gunpowder!"]
+			id: "4B2844603975A9C4"
+			subtitle: "Get gunpowder by placing flint in a crusher!"
+			tasks: [{
+				count: 10L
+				id: "70B7248075853331"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			title: "Automate: Gunpowder"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"08E53ACDDD454615"
+				"4B2844603975A9C4"
+			]
+			description: [
+				"By injecting gunpowder and hydrogen chloride together in a chemical injection chamber, you can get sulfur!"
+				""
+				"Or you can mine it, but that's not recommended."
+			]
+			id: "504EB5CA60295067"
+			subtitle: "Automate some sulfur!"
+			tasks: [{
+				count: 5L
+				id: "4971FE9C36FE8F04"
+				item: "mekanism:dust_sulfur"
+				type: "item"
+			}]
+			title: "Automate: Sulfur"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["771421DF8A50DCFD"]
+			description: [
+				"The industrial turbine will take the steam from your nuclear reactor, which will cause the blades inside of it to spin, which generates energy. A great part about this too is that you can recycle the water that you have turned into steam from the turbine by connecting mechanical pipes to the turbine vents to turn the steam inside of it back into water rather than letting it escape. &oNote that if you are not planning to use any power from the industrial turbine, you should run it into a few resistive heaters and turn up its power consumption to the maximum you possibly can so the turbine does not max out on electricity and cause it to stop spinning (which will melt down your entire reactor)"
+				""
+				"&lA schematic is included with this to help you make a decently sized industrial turbine, and you should remember that you can always make them larger with a maximum size of 18x18x18 blocks. ALSO: the schematics do not come with the rotor blades. Make sure to add them in manually."
+				""
+				"If you want to know what each block does (for future turbine-making and optimizations), here's what they do:"
+				""
+				"- Turbine Blade: The more there are, the more spin"
+				"- Electromagnetic Coils: Increase maximum energy output"
+				"- Saturating Condensers: Turn the steam back into water (its good to have a lot so you can get 100% of your water back)"
+				"- Vents: Lets the turbine \"breathe\" by getting rid of steam and work with the saturating condensers (if a pipe is connected to them, it will give the water that was evaporated back to you, PS: stay mindful of pipe transfer rates)"
+				"- Pressure Disperser: Creates a barrier between the place the steam would be and the EM coils, condensers, etc..."
+			]
+			icon: "mekanismgenerators:turbine_blade"
+			id: "1EFDF8E58472972C"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Make an industrial turbine!"
+			tasks: [
+				{
+					count: 78L
+					id: "4880E53DBA23DF1C"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					count: 46L
+					id: "3760188BBF7F5EF4"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "687061E4119E136D"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "3910F23B5F676F96"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1E4665DFD05518F4"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6BADE2F808280490"
+					item: "mekanismgenerators:electromagnetic_coil"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "2BD7D562129DCB8B"
+					item: "mekanismgenerators:saturating_condenser"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "71BA6CDA60DD2AD8"
+					item: "mekanismgenerators:turbine_vent"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "08F71B1533AD5AC1"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "629E879C3D2086B8"
+					item: "mekanismgenerators:turbine_valve"
+					type: "item"
+				}
+			]
+			title: "Construct: Industrial Turbine"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["25263FF4F7B0B39E"]
+			description: [
+				"The fission reactor is your ultimate way of obtaining more late game blocks, items, and tools. It needs an intake of fissile fuel, coolant, and needs an output for nuclear waste and your superheated coolant. The power of the fission reactor can also be tuned to your liking. Beware of this, however, because it will consume more resources and output more waste because of that. &oMake sure to use a configurator to change the inputs and outputs accordingly."
+				""
+				"&lA schematic is included with this to show you how to build a semi-small fission reactor. Note that they can be larger, with a maximum size of 18x18x18. Make sure that fissile fuel rods are in a checkerboard pattern. The bigger your reactor is, the harder it is to cool down but the more resources it will be able to contain and the faster it will be.&r"
+			]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "43B2B4E734809EA2"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Make a fission reactor!"
+			tasks: [
+				{
+					count: 42L
+					id: "65802CAE225DB534"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "5E84D2000D7C2712"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "53C304404CF5F4AA"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "675B54BD24A5CE8C"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5976785F3538434F"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			title: "Construct: Fission Reactor"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4B3E3D4949AB09F8"]
+			description: [
+				"Solar neutron activators are important machines that can convert nuclear waste into polonium."
+				""
+				"You can craft a solar neutron activator in order to activate 10 mB of nuclear waste into 1 mB of polonium."
+			]
+			id: "59B4CC3A71672175"
+			subtitle: "Make a solar neutron activator!"
+			tasks: [{
+				id: "6121E9E5D958A7E5"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "Craft: Solar Neutron Activator"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["59B4CC3A71672175"]
+			description: [
+				"By combining water, 1 bucket worth of polonium, and fluorite dust, you are able to make a polonium pellet, which has many different uses."
+				""
+				"&oPlease don't try to eat it.&r"
+			]
+			id: "1B7B9DC195848E00"
+			shape: "square"
+			subtitle: "Make a polonium pellet!"
+			tasks: [{
+				id: "22083790A883A1B0"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "Obtaining Polonium Pellets"
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["43B2B4E734809EA2"]
+			description: [
+				"Radiation is one of the most dangerous things in Mekanism but is able to be avoided quite easily. These barrels will accept things such as nuclear waste and spent nuclear waste and will decay them away. &lDo not break these barrels&r because they will instantly spread radiation around a large area. Once you place them, there's no moving them until all the radioactive material ultimately decays. These waste barrels can also carry plutonium and polonium (do not get them confused), except that they will not decay inside of them. &oBoth types of nuclear waste can be pumped into these barrels using pressurized tubes.&r"
+				""
+				"&lBe very careful when working with radioactive material, it will give you a bad time if worked with incorrectly."
+			]
+			id: "57F549DCD798124E"
+			subtitle: "Craft some radioactive waste barrels!"
+			tasks: [{
+				count: 5L
+				id: "59FFA02A81C80660"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			title: "Storing Nuclear Waste"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["57F549DCD798124E"]
+			description: [
+				"By placing 10 mB of nuclear waste into an isotopic centrifuge, you can extract 1 mB of plutonium (not polonium). Plutonium (not edible) can be turned into a pellet similarly to how you make polonium pellets, and from there can be placed into a chemical injection chamber along with some hydrogen chloride to turn it into reprocessed fissile fragments, which can be turned into fissile fuel if placed into a chemical oxidizer."
+				""
+				"&oThis process is required to make polonium.&r"
+			]
+			id: "4B3E3D4949AB09F8"
+			subtitle: "Recycling waste into more fissile elements"
+			tasks: [{
+				id: "319AB156B21291B5"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			title: "Reprocessing Nuclear Waste"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B7B9DC195848E00"]
+			description: [
+				"QIO is the later game form of item storage and transportation. Unlike Tom's Simple Storage, QIO stores items digitally instead of physically."
+				""
+				"If you fall deeper into the QIO rabbit hole, you can make automatic crafters using formulaic assemblers along, make much more complex (but faster) logistics systems, and more."
+			]
+			icon: "mekanism:qio_drive_base"
+			id: "084C90B4FAC1D743"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "1DC7B3B31BC0F01B"
+				item: "mekanism:reprocessed_fissile_fragment"
+				team_reward: true
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Digital item storage and transportation!"
+			tasks: [
+				{
+					id: "7CB183F592A2CDEF"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+				{
+					id: "76A3DB59D412DCD5"
+					item: "mekanism:portable_qio_dashboard"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "596F22D8DFAFD759"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "46590C17258D7530"
+					item: "mekanism:qio_drive_base"
+					type: "item"
+				}
+				{
+					id: "507C2222D7FD9BD3"
+					item: "mekanism:qio_drive_hyper_dense"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E0EE27A9BA5F8EE"
+					item: "mekanism:qio_drive_time_dilating"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Quantum Item Orchestration"
+			x: 4.0d
+			y: -5.5d
+		}
+	]
+	title: "Chapter 5"
+}

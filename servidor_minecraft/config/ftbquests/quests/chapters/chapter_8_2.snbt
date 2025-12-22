@@ -1,0 +1,398 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_8_2"
+	group: "4CB417075AAAC1D9"
+	icon: "ad_astra:venus_globe"
+	id: "1F854E01F7A054B5"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5D4BEEB27AC3C086"]
+			description: ["In this chapter, you will fly to Venus. This planet is a hostile place, and your old space suit will no longer suffice when on this planet. In order to stay safe when on this planet, you will need a netherite space suit, and like always, you will need a new rocket tier with a special engine that can bring you to the surface and back."]
+			hide: true
+			icon: "ad_astra:venus_globe"
+			id: "53E5FD5FF7E30BF1"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "60816182A56E5837"
+				title: "Preparing For Venus"
+				type: "checkmark"
+			}]
+			x: -0.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53E5FD5FF7E30BF1"]
+			description: ["A regular space suit does not provide enough protection from the harsh conditions of Venus' atmosphere, so you will need a netherite space suit to withstand those conditions."]
+			icon: {
+				Count: 1b
+				id: "ad_astra:netherite_space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2693015FC1C64CAB"
+			subtitle: "Craft a netherite space suit!"
+			tasks: [
+				{
+					id: "19F0245D6F92A1C5"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F0F8E2ECF3F939A"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							BotariumData: { }
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FD9A38EE7587850"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C9358843840BEA3"
+					item: {
+						Count: 1b
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Better Space Suit"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0EE13C3996376E9A"
+				"6A411529126E22F2"
+			]
+			description: [
+				"Tier 3 rockets grant access to Venus and Mercury. It has a more complicated recipe compared to the tier 1 and tier 2 rockets, so be sure to have enough resources ready to craft it."
+				""
+				"&lFriendly reminder to pack another launch pad so you can actually come back.&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_3_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "65D03273A3CF36D7"
+			shape: "square"
+			subtitle: "Make a tier 3 rocket!"
+			tasks: [
+				{
+					id: "283B58169E110AC3"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_3_rocket"
+						tag: {
+							BotariumData: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57753B8E22894020"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+				{
+					id: "6976CF0D55A0E60C"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["65D03273A3CF36D7"]
+			description: ["Congratulations on landing on Venus! This planet has a hostile environment but yields exceptional amounts of resources along with a new metal."]
+			icon: "ad_astra:venus_sand"
+			id: "62D0BC27DF21F405"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Land on Venus!"
+			tasks: [{
+				id: "67BA34692C5D4A0A"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ad_astra:venus_sand"
+				type: "observation"
+			}]
+			title: "Venus Landing"
+			x: 2.25d
+			y: -6.0d
+		}
+		{
+			dependencies: ["62D0BC27DF21F405"]
+			description: ["Yet another extraterrestial metal, calorite is exceptionally heat resistant and strong."]
+			id: "3094B7E731A85F71"
+			subtitle: "Get some calorite!"
+			tasks: [{
+				id: "443F7DFBC0D4632D"
+				item: "ad_astra:raw_calorite"
+				type: "item"
+			}]
+			title: "Obtaining Calorite"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3094B7E731A85F71"]
+			description: [
+				"The jet suit is like a space suit, while also giving you more armor points. It can be charged with energy in order to let yourself fly (this feature unfortunately cannot be toggled)."
+				""
+				"This suit can be further upgraded."
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:jet_suit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "13C4650DD4FD84E2"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "Craft the jet suit!"
+			tasks: [
+				{
+					id: "615D14E46C1E41BB"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23B8CAF30EF2A10A"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit"
+						tag: {
+							BotariumData: { }
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F9ADE71D4FA7A0A"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71B3292C57742FA0"
+					item: {
+						Count: 1b
+						id: "ad_astra:jet_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Obtaining the Jet Suit"
+			x: -0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["695F4E31ECA5B0F6"]
+			description: ["Tier 3 plating is made with blocks of ostrum, tier 2 plating, and reinforced thermal tiles. This plating is strong enough to keep the passenger safe when entering and leaving Venus."]
+			id: "0EE13C3996376E9A"
+			subtitle: "Make some tier 3 plating!"
+			tasks: [{
+				count: 12L
+				id: "537E4DC7CBD04C7E"
+				item: "kubejs:tier_3_plating"
+				type: "item"
+			}]
+			title: "Compact: Tier 3 Plating"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3094B7E731A85F71"]
+			description: ["Quantum entangloporters are upgrades to the tesseract. They can transport energy, fluids, items, but can also transport gases, slurries, and heat."]
+			id: "6F05981643CF013F"
+			optional: true
+			subtitle: "Make a quantum entangloporter!"
+			tasks: [{
+				id: "712D73F5FA96E665"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			title: "Craft: Quantum Entangloporter"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["53E5FD5FF7E30BF1"]
+			description: ["Reinforced thermal tiles can be made by mixing an ostrum plate with a thermal tile. When mixed with plating, these tiles can absorb significantly more heat than their regular counterparts."]
+			id: "695F4E31ECA5B0F6"
+			subtitle: "Making reinforced thermal tiles!"
+			tasks: [{
+				id: "1BA04F515BC55BF8"
+				item: "kubejs:reinforced_thermal_tile"
+				type: "item"
+			}]
+			title: "Better Heat Shielding"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3094B7E731A85F71"]
+			description: ["The ground sifter can be used on Venus in order to extract sulfur from the environment."]
+			icon: "mekanism:dust_sulfur"
+			id: "6D30B9C50D193FBB"
+			optional: true
+			subtitle: "A way to automate sulfur using Venus!"
+			tasks: [
+				{
+					id: "66A1A6EA73059C07"
+					title: "Infinite Sulfur!"
+					type: "checkmark"
+				}
+				{
+					id: "21C8F7D3A06FA100"
+					item: "mekanism:dust_sulfur"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3E1A10E939FDA555"]
+			id: "6A411529126E22F2"
+			subtitle: "Make ostrum engines!"
+			tasks: [{
+				count: 3L
+				id: "371B85D2501834AD"
+				item: "ad_astra:ostrum_engine"
+				type: "item"
+			}]
+			title: "Craft: Ostrum Engines"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53E5FD5FF7E30BF1"]
+			description: ["In order to automate this, you will need to take a few steps back and fly to the Moon. With a ground sifter, you can endlessly extract Moon sand. This sand can be washed for a chance of obtaining one of these crystals."]
+			id: "6BD764AC0EAA5CBA"
+			subtitle: "Automate lunar crystals"
+			tasks: [{
+				id: "2B47A66B7561975C"
+				item: "kubejs:lunar_crystal"
+				type: "item"
+			}]
+			title: "Automate: Lunar Crystals"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BD764AC0EAA5CBA"]
+			description: ["Supercompressed helium can be made in a pressurized reaction chamber with liquid tritium, helium-3, and fluorite. Make sure to have a way to safely dispose of the nuclear waste byproduct."]
+			id: "3E1A10E939FDA555"
+			subtitle: "Make supercompressed helium!"
+			tasks: [{
+				id: "6B8A72246DF51A02"
+				item: "kubejs:supercompressed_helium"
+				type: "item"
+			}]
+			title: "Obtaining Supercompressed Helium"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["13C4650DD4FD84E2"]
+			description: [
+				"The MekaSuit is the ultimate armor you can obtain. On its own, it cannot do much, but when upgraded with various upgrades from the modification station, you can make it incredibly powerful."
+				""
+				"The Meka-Tool is similar to the MekaSuit. It is a multi-tool, but can be upgraded to have significantly more uses and to be incredibly powerful."
+			]
+			icon: "mekanism:mekasuit_helmet"
+			id: "218F6C10F0904F19"
+			rewards: [{
+				count: 5
+				id: "6D193DEBBAC234A9"
+				item: "mekanism:pellet_polonium"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Endgame suit"
+			tasks: [
+				{
+					id: "44A277F8612FB692"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "21ECF0E466CD4711"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "6F70AEF1FC296BEF"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "15093947DCE14F8D"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+				{
+					id: "32E1A2F299555136"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+			]
+			title: "The Meka-Suit and Meka-Tool"
+			x: -1.0d
+			y: -11.5d
+		}
+	]
+	title: "Chapter 8"
+}

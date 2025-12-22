@@ -1,0 +1,70 @@
+{
+    "name": "Ground Sifter",
+    "processor": {
+        "type": "custommachinery:machine"
+    },
+    "appearance": {
+        "block": "kubejs:ground_sifter_side"
+    },
+    "components": [
+        {
+            "type": "custommachinery:energy",
+            "capacity": 10000,
+            "maxInput": 10000
+        },
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 10000,
+            "id": "tank1",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output"
+        }
+    ],
+    "gui": [
+        {
+            "type": "custommachinery:texture",
+            "x": 36,
+            "y": 15,
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "width": 180,
+            "height": 200
+        },
+        {
+            "type": "custommachinery:text",
+            "x": 90,
+            "y": 20,
+            "text": {"text": "Ground Sifter", "color": "dark_gray"}
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 45,
+            "y": 35,
+            "height": 75
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 170,
+            "y": 60,
+            "id": "output"
+        },
+        {
+            "type": "custommachinery:player_inventory",
+            "x": 45,
+            "y": 130
+        },
+        {
+            "type": "custommachinery:progress",
+            "x": 130,
+            "y": 60
+        },
+        {
+            "type": "custommachinery:fluid",
+            "x": 100,
+            "y": 50,
+            "id": "tank1"
+        }
+    ]
+}

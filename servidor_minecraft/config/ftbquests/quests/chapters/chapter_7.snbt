@@ -1,0 +1,273 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_7"
+	group: "4CB417075AAAC1D9"
+	icon: {
+		Count: 1b
+		id: "mekanismgenerators:hohlraum"
+		tag: {
+			mekData: {
+				GasTanks: [{
+					Tank: 0b
+					stored: {
+						amount: 10L
+						gasName: "mekanismgenerators:fusion_fuel"
+					}
+				}]
+			}
+		}
+	}
+	id: "4EB20CFCCAE8D880"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3B9C3A08F871E9A0"]
+			description: ["Fusion reactors are the latest game generators in Create: Mekanized. In this chapter, you will assemble a fusion reactor and make fusion fuel."]
+			hide: true
+			id: "0244A056D14E9533"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3F619F09495D3A99"
+				title: "How To Fusion"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0244A056D14E9533"]
+			description: [
+				"The fusion reactor is the best generator you could make. It uses tritium and deuterium as its fuel and generates insane amounts of energy from that. The fusion reactor can't be made any larger or any smaller, but you can still increase its fuel consumption in order to produce more energy."
+				""
+				"&lA schematic file is included that will help you make the fusion reactor. Note that you are free to move the fusion reactor ports as you wish.&r"
+			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "768C683DDEBEE336"
+			subtitle: "Make a fusion reactor!"
+			tasks: [
+				{
+					count: 46L
+					id: "63AA429A947094B7"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1FCD441D5360304E"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "28BD21CCBC49CE18"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+				{
+					id: "54172AA7A809FE27"
+					item: "mekanismgenerators:laser_focus_matrix"
+					type: "item"
+				}
+			]
+			title: "Assemble: Fusion Reactor"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"768C683DDEBEE336"
+				"6933567F8D9FEF95"
+				"2DC924BBA94EC940"
+				"2892C911A2D8ED43"
+				"61B9F13DEEFEAD40"
+			]
+			description: ["Congratulations, you have successfully ignited the fusion reactor you built. If you want to produce more energy from the reactor, you can increase the fuel usage."]
+			icon: "mekanismgenerators:fusion_fuel_bucket"
+			id: "5D4BEEB27AC3C086"
+			rewards: [{
+				count: 3
+				id: "16B8CD9E7D7DBEED"
+				item: "mekanism:pellet_polonium"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Ignite your fusion reactor!"
+			tasks: [{
+				id: "7B0906FD1527E341"
+				title: "Fusion Ignition!"
+				type: "checkmark"
+			}]
+			title: "Fusion Ignition!"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0244A056D14E9533"]
+			description: [
+				"Deuterium is an isotope of hydrogen and one of the two fuels required in a fusion reactor."
+				""
+				"This quest serves as an indicator for what you'll be doing next."
+			]
+			icon: "mekanismgenerators:deuterium_bucket"
+			id: "4E6E2C10EC15D998"
+			subtitle: "How to make deuterium!"
+			tasks: [{
+				id: "3D67EFEF255C5332"
+				title: "Making Deuterium"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0244A056D14E9533"]
+			description: [
+				"Tritium is an isotope of hydrogen and is one of the two fuels required for a fusion reactor."
+				""
+				"This quest serves as an indicator for what you'll be doing next."
+			]
+			icon: "mekanismgenerators:tritium_bucket"
+			id: "2962764EB9F43681"
+			subtitle: "How to make tritium!"
+			tasks: [{
+				id: "69C1D17998247492"
+				title: "Making Tritium"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E6E2C10EC15D998"]
+			description: ["Heavy water can be obtained using an electrical pump that has the filter upgrade installed."]
+			icon: "mekanism:heavy_water_bucket"
+			id: "3F2DCE374779E7F1"
+			subtitle: "Get a bucket of heavy water!"
+			tasks: [{
+				id: "4C952D9098B61E9C"
+				title: "Obtaining Heavy Water"
+				type: "checkmark"
+			}]
+			title: "Obtaining Heavy Water"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F2DCE374779E7F1"]
+			description: ["Deuterium can be obtained by moving heavy water into an electrolytic separator."]
+			icon: "mekanism:electrolytic_separator"
+			id: "2892C911A2D8ED43"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Get some deuterium!"
+			tasks: [{
+				id: "2B853D3E58473C12"
+				title: "Obtain: Deuterium"
+				type: "checkmark"
+			}]
+			x: -2.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["2962764EB9F43681"]
+			description: ["Liquid lithium can be obtained by evaporating brine in a Thermal Evaporation Plant."]
+			icon: "mekanism:lithium_bucket"
+			id: "3550864D35377016"
+			subtitle: "Obtain liquid lithium!"
+			tasks: [{
+				id: "7B5FE167133F8CD3"
+				title: "Obtaining Liquid Lithium"
+				type: "checkmark"
+			}]
+			title: "Obtaining Liquid Lithium"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3550864D35377016"]
+			description: ["Lithium can be obtained by decondensating liquid lithium in a rotary condensentrator."]
+			icon: "mekanism:rotary_condensentrator"
+			id: "49352B42892E947F"
+			subtitle: "Get some lithium!"
+			tasks: [{
+				id: "74F1C873F2141260"
+				title: "Obtaining Lithium"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49352B42892E947F"]
+			description: ["Tritium can be obtained by placing lithium into a solar neutron activator."]
+			icon: "mekanism:solar_neutron_activator"
+			id: "61B9F13DEEFEAD40"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Get some tritium!"
+			tasks: [{
+				id: "63459B19107491AC"
+				title: "Obtain: Tritium"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0244A056D14E9533"
+				"2892C911A2D8ED43"
+				"61B9F13DEEFEAD40"
+			]
+			description: ["Hohlraums are required to ignite a fusion reactor. In order to work properly, they need to be filled with D-T fuel. After ignition, the hohlraum is consumed."]
+			id: "6933567F8D9FEF95"
+			subtitle: "Make a hohlraum!"
+			tasks: [{
+				id: "02BB891C7AAE6C60"
+				item: {
+					Count: 1b
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Infuse: Hohlraum"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0244A056D14E9533"]
+			description: [
+				"Lasers are a way to transport heat and energy. In order to ignite your fusion reactor, you'll need 400 &omillion&r FE that is delivered to the fusion reactor via lasers. If you haven't already, assemble your fusion reactor and pay attention to the laser focus matrix. Make sure to place your laser amplifier with the red side facing towards the laser focus matrix &oand set the redstone detection to Normal&r. This will make it so you will need to power the amplifier with redstone in order for it to fire out its laser."
+				""
+				"From there, you can set up more lasers that are firing into the amplifier and allow it to accumulate 400 MFE before you can fire it into the fusion reactor's focus matrix and ultimately ignite it."
+			]
+			id: "2DC924BBA94EC940"
+			subtitle: "How to set up laser networks for fusion ignition!"
+			tasks: [{
+				id: "405A7DF2ADD23A18"
+				item: "mekanism:laser_amplifier"
+				type: "item"
+			}]
+			title: "Laser Arrays"
+			x: -1.5d
+			y: -2.5d
+		}
+	]
+	title: "Chapter 7"
+}

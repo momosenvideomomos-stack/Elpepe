@@ -1,0 +1,218 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_10"
+	group: "4CB417075AAAC1D9"
+	icon: "ad_astra:glacio_globe"
+	id: "4232E4015DAB8C19"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["52389816D17070BB"]
+			description: ["This is the last chapter of the modpack, and will walk you through the necessary steps required to assemble a tier 4 rocket."]
+			hide: true
+			id: "69E01D279F7F2C59"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Information about this chapter"
+			tasks: [{
+				id: "0B111B71FFEA45F5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "Preparing for Interstellar Travel"
+			x: 0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"2428BE6F445B0E65"
+				"218C0AD59DED344B"
+			]
+			description: [
+				"The tier 4 rocket is the final rocket you will make in the modpack. This rocket gives you access to all previous planets including Glacio, a distant exoplanet in another solar system."
+				""
+				"Congratulations, and &ldon't forget&r to pack an extra launch pad (and extra fuel) if you want to come back."
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_4_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "5B6CF79E6EDBF355"
+			shape: "square"
+			subtitle: "Make a tier 4 rocket!"
+			tasks: [
+				{
+					id: "6A803628EFDFFA05"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_4_rocket"
+						tag: {
+							BotariumData: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CE8C63741D6C445"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+			]
+			title: "Tier 4 Rocket"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"218C0AD59DED344B"
+				"0C34036DDE716C4D"
+			]
+			id: "2428BE6F445B0E65"
+			subtitle: "Make some calorite engines!"
+			tasks: [{
+				count: 3L
+				id: "32CCF0C358EF74D1"
+				item: "ad_astra:calorite_engine"
+				type: "item"
+			}]
+			title: "Assemble: Calorite Engine"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69E01D279F7F2C59"]
+			id: "218C0AD59DED344B"
+			subtitle: "Make some tier 4 plating!"
+			tasks: [{
+				count: 22L
+				id: "2EA296CCB688AF4E"
+				item: "kubejs:tier_4_plating"
+				type: "item"
+			}]
+			title: "Compact: Tier 4 Plating"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B6CF79E6EDBF355"]
+			description: [
+				"Congratulations, after hours of playing and making each individual machine and item necessary, you have escaped the confines of the solar system and landed on Glacio. This planet doesn't have much to it, but still offers a suitable climate that allows you to breathe without a space suit. And if you choose to hide away here for the rest of your days, I wouldn't blame you, just double check to confirm if anything followed you here. On second thought, I doubt it would make a difference."
+				""
+				"Thank you for playing Create: Mekanized."
+			]
+			icon: "ad_astra:glacio_stone"
+			id: "25DE062D53402D4B"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Land on Glacio"
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				id: "1C3931BA079E6120"
+				title: "Glacio Landing"
+				type: "dimension"
+			}]
+			title: "Interstellar"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["69E01D279F7F2C59"]
+			description: ["A digital miner is a late-game automatic mining machine. It requires power in order to function and has a built-in inventory. This machine can extract specific blocks from the ground in a configurable range. It can be upgraded with speed in order to function faster."]
+			id: "7AEAD5519CE8A240"
+			subtitle: "Make a digital miner!"
+			tasks: [{
+				id: "0EBBCA18C1216267"
+				item: "mekanism:digital_miner"
+				type: "item"
+			}]
+			title: "Automatic Mining"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7AEAD5519CE8A240"]
+			description: ["Mercury can be flown to with a tier 3 rocket. On first glance, it doesn't look like it has much, but this planet's crust has small traces of a valuable material called stellarite. This material will need to be collected in large amounts in order to assemble a tier 4 rocket."]
+			icon: "ad_astra:mercury_stone"
+			id: "671A77EDF10D7C99"
+			shape: "square"
+			subtitle: "Land on Mercury!"
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "686678800577C5CA"
+				title: "Go to Mercury!"
+				type: "dimension"
+			}]
+			title: "Fly to Mercury"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["671A77EDF10D7C99"]
+			description: [
+				"Mercury stone dust can be obtained by just crushing Mercury cobblestone."
+				""
+				"The Create: Mekanized developer team would like to mention that this is not the element Mercury, and it is safe to interact with. This is non-toxic, but still not edible."
+			]
+			id: "7F02ADC88876918B"
+			subtitle: "Obtain a lot of Mercury stone dust!"
+			tasks: [{
+				id: "1FEE76E6E5B41FEA"
+				item: "kubejs:mercury_stone_dust"
+				type: "item"
+			}]
+			title: "\"Automate\": Mercury Stone Dust"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F02ADC88876918B"]
+			description: ["Rare metal dust can be obtained by processing Mercury stone dust through a microgravity centrifuge."]
+			id: "15B7AC0227448704"
+			subtitle: "Obtain rare metal dust!"
+			tasks: [{
+				id: "30019671063E6C2B"
+				item: "kubejs:rare_metal_dust"
+				type: "item"
+			}]
+			title: "Obtain: Rare Metal Dust"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15B7AC0227448704"]
+			description: ["Through a rather complex processing line, (enough) rare metal dust can be processed into a stellarite cluster."]
+			id: "175F51F7FEA8EEAC"
+			subtitle: "Obtain a stellarite cluster!"
+			tasks: [{
+				id: "636E7AE49A2CD122"
+				item: "kubejs:stellarite_cluster"
+				type: "item"
+			}]
+			title: "Obtain: Stellarite Cluster"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["175F51F7FEA8EEAC"]
+			description: ["A piece of refined stellarite can be made by processing enough stellarite clusters."]
+			id: "0C34036DDE716C4D"
+			shape: "square"
+			subtitle: "Obtain refined stellarite!"
+			tasks: [{
+				id: "13D9713DA4346C2B"
+				item: "kubejs:refined_stellarite"
+				type: "item"
+			}]
+			title: "Obtain: Refined Stellarite"
+			x: -2.5d
+			y: -3.5d
+		}
+	]
+	title: "Chapter 10"
+}

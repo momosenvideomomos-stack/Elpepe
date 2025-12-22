@@ -1,0 +1,378 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3"
+	group: "4CB417075AAAC1D9"
+	icon: "createaddition:electric_motor"
+	id: "2EBDC1020FE9F8F1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2E3AECA5FE173852"]
+			description: ["In this chapter, you will be introduced to Mekanism and its various uses. When paired with Create, you can make very complex, but powerful, processing lines."]
+			hide: true
+			icon: "mekanism:basic_universal_cable"
+			id: "218B631C63578A5F"
+			rewards: [
+				{
+					count: 10
+					id: "081AE76038B827F1"
+					item: "create:brass_ingot"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 15
+					id: "721F3563FFE26CD2"
+					item: "minecraft:redstone"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "189B8B40A6CEFAF6"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Energy and Machinery"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["When powered (and containing water), the electrolytic separator can electrolyze water into hydrogen and oxygen."]
+			icon: "mekanism:electrolytic_core"
+			id: "7A0B7AFCF0F68DE4"
+			subtitle: "Craft an electrolytic separator"
+			tasks: [{
+				id: "01BEA19FF8DB800E"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			title: "Electrolysis"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["Seed oil can be produced by compacting a seed of your choice."]
+			id: "24E119850FD679B1"
+			rewards: [{
+				count: 10
+				id: "4A0F9515CCAC91C8"
+				item: "minecraft:wheat_seeds"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Automate seed oil!"
+			tasks: [{
+				id: "10202B43F0F23FA3"
+				item: "createaddition:seed_oil_bucket"
+				type: "item"
+			}]
+			title: "Automate: Seed Oil"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["24E119850FD679B1"]
+			description: ["Biomass can be made by mixing any type of biological matter with seed oil. It can be compacted into a biomass pellet that can be used as furnace fuel or in a stirling dynamo."]
+			id: "70CA33707627985D"
+			subtitle: "Automate biomass!"
+			tasks: [{
+				count: 2L
+				id: "25659832DAB1D272"
+				item: "createaddition:biomass"
+				type: "item"
+			}]
+			title: "Automate: Biomass"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7A0B7AFCF0F68DE4"
+				"70CA33707627985D"
+			]
+			description: ["Ethylene can be used in a gas-burning generator to make energy or it can be converted to liquid ethylene (with a rotary condensentrator) to be used for HDPE."]
+			id: "3E4537136F0414C0"
+			shape: "square"
+			subtitle: "Make some ethylene!"
+			tasks: [{
+				count: 5L
+				id: "59230A34FC476305"
+				item: "mekanism:substrate"
+				type: "item"
+			}]
+			title: "Automate: Ethylene"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3E4537136F0414C0"
+				"7A0B7AFCF0F68DE4"
+			]
+			description: ["HDPE pellets are made from placing liquid ethylene, oxygen, and substrate in a pressurized reaction chamber."]
+			id: "7F8E511C9FA4A327"
+			shape: "square"
+			subtitle: "Get some HDPE pellets!"
+			tasks: [{
+				count: 10L
+				id: "248BED7E70B79D96"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			title: "Obtaining HDPE Pellets"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70CA33707627985D"]
+			description: [
+				"A bio-generator, the machine that burns clean fuel (biomass) to generate energy."
+				""
+				"Does it really matter that it burns clean fuel? Since when was pollution ever a problem?"
+			]
+			id: "3999ED3081B3891B"
+			optional: true
+			subtitle: "Make a bio-generator!"
+			tasks: [{
+				id: "3238B57329B22243"
+				item: "mekanismgenerators:bio_generator"
+				type: "item"
+			}]
+			title: "Craft: Bio-Generator"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["The electric motor takes energy to provide rotation and stress units. You can optionally change the RPM that this generator makes if you have the energy to spare."]
+			id: "42AF7163C292CFFF"
+			optional: true
+			subtitle: "Craft an electric motor!"
+			tasks: [{
+				id: "75B677D62F3804F5"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			title: "Energy -> Rotation"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["Alternators take rotation and make energy. The faster the shaft on the alternator spins, the more energy it makes."]
+			id: "3C852EEE5B3A9AC6"
+			optional: true
+			subtitle: "Craft an alternator!"
+			tasks: [{
+				id: "2B6CD054868003D8"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			title: "Rotation -> Energy"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F8E511C9FA4A327"]
+			description: ["HDPE sheets can either be manually crafted or made with an enrichment chamber."]
+			id: "7E606D81A3E2F0DF"
+			subtitle: "Make an HDPE sheet!"
+			tasks: [{
+				count: 10L
+				id: "50AD3EB90C488974"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			title: "Craft: HDPE Sheet"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7E606D81A3E2F0DF"]
+			description: ["Basic control circuits can be made with a sequenced assembly recipe and have a lot of usage in Mekanism, especially in their upgraded forms."]
+			id: "7C3CB8CEEC246731"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Make some basic control circuits!"
+			tasks: [{
+				count: 10L
+				id: "45F46841351839CA"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "Circuitry"
+			x: -2.25d
+			y: 7.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["Energy cubes act as a battery to store extra energy."]
+			id: "5D1B14CE562109CF"
+			optional: true
+			subtitle: "Craft a basic energy cube!"
+			tasks: [{
+				id: "51BACEA8EE827A7E"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "Craft: Basic Energy Cube"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E4537136F0414C0"]
+			description: ["This generator can burn ethylene to provide power. It is useful for times where you may have a surplus of ethylene and would like to convert it into energy."]
+			id: "2B59F474C0511D61"
+			optional: true
+			subtitle: "Make a gas burning generator!"
+			tasks: [{
+				id: "6DFFBD593D9A5EFC"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			title: "Craft: Gas Burning Generator"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C3CB8CEEC246731"]
+			description: [
+				"Did you think that the control circuit was the final part of chapter 3? Well, you'd be wrong. The final part of chapter 3 is actually the logic mechanism assembly."
+				""
+				"A logic mechanism can be assembled with a precision mechanism, an electron tube, a basic control circuit, and a part of an assembly kit."
+			]
+			id: "0BCBF6622303FB66"
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "Make a logic mechanism!"
+			tasks: [{
+				id: "6CEA197A38609E81"
+				item: "kubejs:logic_mechanism"
+				type: "item"
+			}]
+			title: "Assemble: Logic Mechanism"
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: [
+				"Doubling ores is a simple process, so we will go a step further and will skip right to tripling them."
+				""
+				"To get started, use a purification chamber to turn an ore or raw materials into clumps. Purifying ores over raw materials will yield a little bit more clumps. To significantly reduce the oxygen usage of this machine, upgrade it with gas upgrades."
+			]
+			icon: "mekanism:purification_chamber"
+			id: "6EEB5E86ED35B6E6"
+			optional: true
+			subtitle: "Craft a purification chamber!"
+			tasks: [
+				{
+					id: "1CE6F6F45F0CC7DD"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+				{
+					id: "39B300739F40F866"
+					type: "checkmark"
+				}
+			]
+			title: "Tripling Ores: Step 1"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6EEB5E86ED35B6E6"]
+			description: ["Move the clumps obtained from the purification chamber into a crusher in order to make dirty dust."]
+			icon: "mekanism:crusher"
+			id: "799913A2B7F9F39B"
+			optional: true
+			subtitle: "Craft a crusher!"
+			tasks: [
+				{
+					id: "7F689941DF4CA469"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					id: "2B178332D7BC2B74"
+					type: "checkmark"
+				}
+			]
+			title: "Tripling Ores: Step 2"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["799913A2B7F9F39B"]
+			description: ["Clean the dirty dust from the previously-used crusher from step 2 into regular dust through the enrichment chamber."]
+			icon: "mekanism:enrichment_chamber"
+			id: "4025F51068A9DA99"
+			optional: true
+			subtitle: "Craft an enrichment chamber!"
+			tasks: [
+				{
+					id: "7E17D893AC6EDA12"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+				{
+					id: "14291C6568861B47"
+					type: "checkmark"
+				}
+			]
+			title: "Tripling Ores: Step 3"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4025F51068A9DA99"]
+			description: ["Using your furnace of choice, smelt the clean dust from an enrichment chamber to obtain an ingot."]
+			icon: "minecraft:furnace"
+			id: "5D1B7931C29C7EF4"
+			optional: true
+			shape: "square"
+			subtitle: "Craft something to smelt!"
+			tasks: [
+				{
+					id: "70925B72F06D0238"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "0473A7C25B9DDD14"
+					type: "checkmark"
+				}
+			]
+			title: "Tripling Ores: Step 4"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7C3CB8CEEC246731"]
+			description: [
+				"Any machine that can process items can be upgraded via a tier installer (preferred method) or through directly crafting the upgraded version."
+				""
+				"A single machine can be upgraded to a factory, which essentially boosts the amount of input slots and output slots, allowing more items to be processed at once. To automatically sort items to fill all input slots, you can turn auto-sort on (found in the machine's GUI)."
+			]
+			id: "396412C491D98B61"
+			optional: true
+			subtitle: "Turn your single machine into a factory!"
+			tasks: [{
+				id: "46DB3ED872C9C8E7"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			title: "Upgrading Mekanism Machines"
+			x: -3.0d
+			y: 5.5d
+		}
+	]
+	title: "Chapter 3"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "N",
+    "I"
+  ],
+  "key": {
+    "I": [
+      {
+        "item": "minecraft:blast_furnace"
+      }
+    ],
+    "S": [
+      {
+        "item": "create:steam_engine"
+      }
+    ],
+    "N": [
+      {
+        "item": "create:fluid_tank"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:boiler"
+  }
+}
